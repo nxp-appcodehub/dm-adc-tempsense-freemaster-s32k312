@@ -1,7 +1,7 @@
 # NXP Application Code Hub
 [<img src="https://mcuxpresso.nxp.com/static/icon/nxp-logo-color.svg" width="100"/>](https://www.nxp.com)
 
-## ADC Temperature Sensing MCAL with FreeMASTER on FRDM-A-S32K312
+## ADC Temperature Sensing MCAL with FreeMASTER
 This demo shows how to configure and use the ADC to read the internal die temperature of the S32K312 microcontroller using the NXP S32K3 AUTOSAR Real-Time Drivers (RTD) MCAL layer and S32 Design Studio.
 The example uses the AUTOSAR `Adc` driver TempSense API to continuously poll the on-die temperature sensor, converts the Q11.4 fixed-point result to degrees Celsius, and exposes the reading as a global variable (`temperature`) via the FreeMASTER real-time data visualization tool over LPUART6.
 [<p><img src="./images/FRDM-A-S32K312-ADC-TempSense.png" width="400"/></p>](./images/FRDM-A-S32K312-ADC-TempSense.png)
@@ -20,8 +20,8 @@ The example uses the AUTOSAR `Adc` driver TempSense API to continuously poll the
 6. [Release Notes](#step6)
 
 ## 1. Software and Tools<a name="step1"></a>
-This example was developed using the FRDM Automotive Bundle for S32K3. To download and install the complete software and tools ecosystem, use the following link:
-- [S32K3 FRDM Automotive Board Installation Package](https://www.nxp.com/app-autopackagemgr/automotive-software-package-manager:AUTO-SW-PACKAGE-MANAGER?currentTab=0&selectedDevices=S32K3&applicationVersionID=156)
+This example was developed using the FRDM Automotive Bundle for S32K3 + S32M27. To download and install the complete software and tools ecosystem, use the following link:
+- [ FRDM Automotive S32K3 + S32M27 Board Installation Package](https://www.nxp.com/app-autopackagemgr/automotive-software-package-manager:AUTO-SW-PACKAGE-MANAGER?currentTab=0&selectedDevices=S32K3&applicationVersionID=203)
 - [FreeMASTER Run-Time Debugging Tool](https://www.nxp.com/design/design-center/software/development-software/freemaster-run-time-debugging-tool:FREEMASTER)
 
 ## 2. Hardware<a name="step2"></a>
@@ -111,3 +111,4 @@ Questions regarding the content/correctness of this example can be entered as Is
 | Version | Description / Update                           | Date                        |
 |:-------:|------------------------------------------------|----------------------------:|
 | 1.0     | Initial release on Application Code Hub        | June 17<sup>th</sup> 2026   |
+| 1.1     | Updated to FRDM Automotive S32K3 + S32M27 (RTD 7.0.1) |August 26<sup>th</sup> 2026|
